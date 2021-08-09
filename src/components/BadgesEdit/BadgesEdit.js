@@ -33,7 +33,7 @@ class BadgesEdit extends React.Component {
 
     handleSubmit = async () => {
         await Http.instance.put(this.state.badge._id, this.state.form);
-
+        //this.props.navigation.replace('Badges');
     };
 
     render() {
